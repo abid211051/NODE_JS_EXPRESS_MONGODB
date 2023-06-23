@@ -20,7 +20,7 @@ app.get('/status', (req,res)=>{
     // res.end()
 })
 
-app.use((req, res)=>{
+app.use("*", (req, res)=>{
     res.send('<h1>404 Not Found</h1>')
 })
 module.exports = app;
